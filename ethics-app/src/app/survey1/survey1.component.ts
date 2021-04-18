@@ -16,8 +16,4 @@ export class Survey1Component implements OnInit {
     console.log(event.checked)
   }
 
-  buttonHandler(){
-    console.log("handled")
-  }
-
 }

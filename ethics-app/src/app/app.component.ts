@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ethics-app';
+
+  buttonHandler(){
+    console.log("handled")
+  }
 }
