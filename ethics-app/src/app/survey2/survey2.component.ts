@@ -1,3 +1,4 @@
+import { basename } from '@angular/compiler-cli/src/ngtsc/file_system';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,13 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Survey2Component implements OnInit {
 
+  base = "https://uchicago.co1.qualtrics.com/jfe/form/SV_bvd8wuBbjxNP1To?survey=survey2";
+  final = this.base + "checked=false";
+
   constructor() { }
 
   ngOnInit() {
   }
 
   checkCheckBoxvalue(event){
-    console.log(event.checked)
+    this.final = this.base + `&checked=${event}`
+    console.log(this.final)
   }
 
 }
