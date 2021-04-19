@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Survey1Component implements OnInit {
 
   base = "https://uchicago.co1.qualtrics.com/jfe/form/SV_bvd8wuBbjxNP1To?survey=survey1"
-  final = this.base + "checked=true";
+  final = this.base + "&checked=true";
 
   constructor() { }
 
